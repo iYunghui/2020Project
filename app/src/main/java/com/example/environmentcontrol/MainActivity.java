@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("light");
 
-        myRef = database.getReference("light");
+        /*myRef = database.getReference("light");
         myRef.setValue("1");
 
         myRef = database.getReference("fan");
-        myRef.setValue("1");
+        myRef.setValue("1");*/
 
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
